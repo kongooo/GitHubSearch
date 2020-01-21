@@ -47,33 +47,26 @@ a {
 }
 
 .search-box {
-    width: 1012px;
-    height: 100%;
-    margin: 0px 262px;
+    width: 852px;
+    height: 122.8px;
+    margin: 40px auto;
 }
 
-.search-content {
+.foot-content {
+    display: inline-flex;
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
-    padding: 40px 80px;
 }
 
 .foot {
     width: 980px;
-    height: 113.8px;
-    padding: 0px 278px;
-    background-color: white;
-    position: relative;
-    z-index: 0;
-}
-
-.foot-content {
-    width: 100%;
     height: 24.8px;
     border-top: 1px solid #e1e4e8;
     padding-top: 40px;
-    display: inline-flex;
+    display: block;
+    background-color: white;
+    z-index: 0;
+    margin: 0 auto;
 }
 
 .git-logo {
@@ -115,7 +108,7 @@ a {
 }
 
 .git-word {
-    width: 1338.3px;
+    width: 100%;
     height: 100%;
 }
 
@@ -271,14 +264,15 @@ a {
 .git-image {
     height: 100%;
     width: 31.85px;
-    margin: 0;
     position: relative;
     top: 7px;
+    margin-right: 0;
 }
 
 .image-arrow {
-    left: 0px;
-    bottom: 4px;
+    left: 24px;
+    bottom: 15px;
+    position: absolute;
 }
 
 .image-menu {
