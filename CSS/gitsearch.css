@@ -1,0 +1,478 @@
+body {
+    width: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #24292e;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg {
+    width: 100%;
+    height: 460.6px;
+    position: absolute;
+    background-color: transparent;
+    z-index: -1;
+}
+
+.banner {
+    width: 100%;
+    height: 64px;
+    background-color: #24292e;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.main {
+    width: 100%;
+    background-color: white;
+    position: relative;
+    z-index: 0;
+}
+
+.space {
+    background-color: white;
+    height: 40px;
+    width: 100%;
+}
+
+.search {
+    width: 100%;
+    height: 202.8px;
+}
+
+.search-box {
+    width: 1012px;
+    height: 100%;
+    margin: 0px 262px;
+}
+
+.search-content {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px 80px;
+}
+
+.foot {
+    width: 980px;
+    height: 113.8px;
+    padding: 0px 278px;
+    background-color: white;
+    position: relative;
+    z-index: 0;
+}
+
+.foot-content {
+    width: 100%;
+    height: 24.8px;
+    border-top: 1px solid #e1e4e8;
+    padding-top: 40px;
+    display: inline-flex;
+}
+
+.git-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.git-logo:hover a svg path {
+    fill: rgb(202, 202, 202);
+}
+
+.git-bell:hover a svg path {
+    fill: rgb(202, 202, 202);
+}
+
+.drop-button:hover {
+    cursor: pointer;
+}
+
+.drop-button:hover svg path {
+    fill: rgb(202, 202, 202);
+}
+
+.drop-button:hover .arrow-down {
+    border-top-color: rgb(202, 202, 202);
+}
+
+.image {
+    height: 22.5px;
+}
+
+.link-item:hover {
+    color: rgb(202, 202, 202);
+}
+
+.header-item {
+    margin-right: 16px;
+    display: inline-flex;
+}
+
+.git-word {
+    width: 1338.3px;
+    height: 100%;
+}
+
+.nav-block {
+    width: 308.65px;
+    height: 20.8px;
+    padding: 5.6px 0px;
+    display: inline-flex;
+}
+
+.link-item {
+    margin-right: 16px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    text-decoration: none;
+}
+
+.git-bell {
+    height: 100%;
+    width: 14px;
+    padding-top: 7.6px;
+    box-sizing: border-box;
+}
+
+.add {
+    height: 100%;
+    width: 23.85px;
+    padding-top: 7.6px;
+    box-sizing: border-box;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-top-color: white;
+    display: inline-flex;
+    position: relative;
+}
+
+[aria-label] {
+    position: relative;
+}
+
+[aria-label]::after {
+    content: attr(aria-label);
+    background-color: #1b1f23;
+    border-radius: 3px;
+    color: white;
+    font-size: 8px;
+    font: normal normal 11px/1.5 -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    padding: 0.5em 0.75em;
+    position: absolute;
+    width: 159.038px;
+    top: 100%;
+    right: -70%;
+    opacity: 0;
+    transition: opacity 0.1s ease 0.5s;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+[aria-label]::before {
+    width: 0;
+    height: 0;
+    color: #1b1f23;
+    content: "";
+    border: 6px solid transparent;
+    border-bottom-color: #1b1f23;
+    top: 13px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.1s ease 0.5s;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+[aria-label]:hover:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+[aria-label]:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.add-menu {
+    height: 144px;
+    width: 158px;
+    border: 1px solid rgba(27, 31, 35, .15);
+    box-shadow: 0 1px 15px rgba(27, 31, 35, .15);
+    border-radius: 4px;
+    position: absolute;
+    background-color: white;
+    background-clip: padding-box;
+    right: 65px;
+    top: 50px;
+    padding: 4px 0;
+    z-index: 3;
+}
+
+.add-menu::before {
+    width: 0;
+    height: 0;
+    color: white;
+    content: "";
+    border: 7px solid transparent;
+    border-bottom-color: white;
+    top: -14px;
+    left: 135px;
+    position: absolute;
+    /* opacity: 0;
+    visibility: hidden;
+    pointer-events: none; */
+}
+
+.add-menu:hover {
+    cursor: default;
+}
+
+.drop-item {
+    width: 100%;
+    height: 28.8px;
+    padding: 4px 8px 4px 16px;
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 14px;
+    color: #24292e;
+    display: block;
+    box-sizing: border-box;
+}
+
+.drop-item:hover {
+    background-color: #0366d6;
+    color: white;
+    cursor: pointer;
+}
+
+.avatar {
+    border-radius: 3px;
+    display: inline-flex;
+}
+
+.git-add {
+    height: 100%;
+    width: 23.85px;
+}
+
+.git-image {
+    height: 100%;
+    width: 31.85px;
+    margin: 0;
+    position: relative;
+    top: 7px;
+}
+
+.image-arrow {
+    left: 0px;
+    bottom: 4px;
+}
+
+.image-menu {
+    right: 0;
+    top: 33px;
+    display: none;
+    width: 178px;
+    height: 370.6px;
+    z-index: 3;
+}
+
+.image-menu::before {
+    left: 154px;
+}
+
+.header-content {
+    width: 100%;
+    height: 100%;
+    padding: 4px 16px 2px 16px;
+}
+
+.font-style {
+    color: #24292e;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 14px;
+    font-weight: inherit;
+    box-sizing: border-box;
+    display: inline-flex;
+}
+
+.division {
+    width: 100%;
+    height: 0;
+    margin: 8px 0;
+    border-top: 1px solid #e1e4e8;
+}
+
+.drop-status {
+    width: 146px;
+    height: 31.6px;
+    padding: 0 16px 4px 16px;
+}
+
+.status-content {
+    width: 128px;
+    height: 21.6px;
+    padding: 4px 8px;
+    border: 1px solid #e1e4e8;
+    border-radius: 3px;
+    display: inline-flex;
+}
+
+.status-content:hover .smile-box .smile-content svg path {
+    fill: #0366d6;
+}
+
+.status-content:hover {
+    cursor: pointer;
+}
+
+.smile-box {
+    width: 20px;
+    height: 21.6px;
+    padding-right: 8px;
+    display: inline-flex;
+}
+
+.smile-content {
+    width: 16px;
+    height: 16px;
+    margin: 4px 4px 0 0;
+}
+
+.set-status {
+    width: 59.225px;
+    height: 21.6px;
+    display: inline-flex;
+}
+
+.set-content {
+    margin-left: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 12px;
+    color: #586069;
+    padding: 4px 0;
+}
+
+.adding-menu {
+    display: none;
+}
+
+.search-title {
+    margin: 0;
+    height: 36px;
+    font-weight: 400 !important;
+    font-size: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    color: #24292e;
+}
+
+.input-area {
+    width: 100%;
+    height: 34px;
+    margin: 16px 0;
+}
+
+.input-box {
+    width: 775.838px;
+    height: 100%;
+    display: inline-flex;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: 1px solid #d1d5da;
+    box-shadow: inset 0 1px 2px rgba(27, 31, 35, .075);
+    border-radius: 3px;
+    color: #333333;
+    font-size: 14px;
+    font-family: inherit;
+    vertical-align: center;
+    font-weight: 400;
+}
+
+.search-input:focus {
+    border-color: #2188FF;
+    outline: transparent;
+    box-shadow: 0 0 1px 3px #B3D1F3;
+    caret-color: #1b1f23;
+}
+
+::placeholder {
+    color: #c2c2c2;
+}
+
+.commit-button {
+    width: 68.16px;
+    height: 34px;
+    padding: 6px 12px;
+    border: 1px solid rgba(27, 31, 35, .2);
+    margin-left: 8px;
+    position: absolute;
+    color: #24292e;
+    background-color: #eff3f6;
+    background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    border-radius: 3px;
+}
+
+.commit-button:hover {
+    background-image: linear-gradient(-180deg, #EFF2F6, #E6EBF1 90%);
+}
+
+.temp-a {
+    color: #0366d6;
+}
+
+.temp-a:hover {
+    text-decoration: underline;
+}
+
+.spe-a:hover {
+    text-decoration: none;
+}
+
+.foot-show {
+    list-style: none;
+    display: inline-flex;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    width: 408.33px;
+}
+
+.list-style {
+    color: #586069;
+    font-size: 12px;
+}
+
+.foot-logo {
+    width: 24px;
+    height: 24.8px;
+    margin: 0 70px;
+    display: inline-flex;
+}
+
+.foot-logo:hover svg path {
+    fill: #87898d;
+}
